@@ -1,0 +1,115 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+span {
+    color: #FF0E57;
+}
+
+
+section {
+    padding: 20px 5%;
+    background: #CCFFCC;
+    position: relative;
+    animation-name: example;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes example {
+    0% {
+        top: 500px;
+    }
+
+    100% {
+        top: 0px;
+    }
+}
+
+.title {
+    border: 2px solid red;
+    text-align: center;
+    padding: 20px;
+    margin-bottom: 20px;
+    position: relative;
+    animation-name: come;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes come {
+    0% {
+        top: 500px;
+    }
+
+    50% {
+        background-color: red;
+        color: white;
+    }
+
+    100% {
+        top: 0px;
+    }
+}
+
+.title h1 {
+    font-size: 50px;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
+
+
+.title h4 {
+    font-size: 30px;
+    color: #4E4E4E;
+    text-transform: uppercase;
+}
+
+.parent {
+    display: flex;
+    justify-content: center;
+
+}
+
+ul {
+    animation-name: up_ul;
+    animation-duration: 5s;
+    position: relative;
+animation-iteration-count: infinite;
+}
+
+@keyframes up_ul {
+    from {
+        left: 800px;
+    }
+
+    to {
+        left: 0px;
+    }
+}
+
+@keyframes up_ul {
+    0% {
+        left: 0px;
+    }
+
+    50% {
+        left: -800px;
+    }
+
+    100% {
+        left: 0px;
+        background-color: red;
+        list-style: none;
+        padding: 100px;
+        color: #fff;
+
+    }
+}
+
+li {
+    font-size: 23px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
